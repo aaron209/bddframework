@@ -20,7 +20,7 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>7.7.1</version>
-			<scope>test</scope>
+			
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
@@ -74,7 +74,7 @@
 					<properties>
 						<property>
 							<name>dataproviderthreadcount</name>
-							<value>3</value>
+							<value>2</value>
 						</property>
 					</properties>
 				</configuration>
