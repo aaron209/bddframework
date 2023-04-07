@@ -6,6 +6,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import library.BaseTest;
+import library.ConfigReader;
 import pageObjects.HomePageObject;
 
 public class HomePage extends BaseTest {
@@ -14,7 +15,8 @@ public class HomePage extends BaseTest {
 
 	@Given("^The user lauches the application$")
 	public void the_user_lauches_the_application() {
-		homePage = new HomePageObject(lauchApplication());
+		String browser = ConfigReader.getBrowserType();
+		homePage = new HomePageObject(lauchApplication(browser));
 	}
 
 	@When("^The user searches an item \"([^\"]*)\"$")
